@@ -12,7 +12,10 @@ cmds = [
 cmds = [
     "php artisan config:clear",
     "php artisan route:clear",
-    "php artisan view:clear"
+    "php artisan view:clear",
+    "mkdir -p storage/database",
+    "touch storage/database/database.sqlite",
+    "php artisan migrate --force"
 ]
 
 [start]

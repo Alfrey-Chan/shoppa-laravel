@@ -3,6 +3,15 @@
 # Exit on error
 set -e
 
+echo "Creating database directory..."
+mkdir -p storage/database
+
+echo "Creating database file if not exists..."
+touch storage/database/database.sqlite
+
+echo "Running migrations..."
+php artisan migrate --force
+
 echo "Optimizing application..."
 php artisan optimize
 

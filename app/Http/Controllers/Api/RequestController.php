@@ -55,11 +55,11 @@ class RequestController extends Controller
             }
         }
 
-        Mail::to(config('mail.admin_email'))
-            ->send(new RequestSubmissionMail($requestSubmission));
+        // Mail::to(config('mail.admin_email'))
+        //     ->send(new RequestSubmissionMail($requestSubmission));
 
-        Mail::to($requestSubmission->email)
-            ->send(new RequestReceivedMail($requestSubmission));
+        // Mail::to($requestSubmission->email)
+        //     ->send(new RequestReceivedMail($requestSubmission));
 
         return response()->json([
             "message" => "Request submitted successfully!",

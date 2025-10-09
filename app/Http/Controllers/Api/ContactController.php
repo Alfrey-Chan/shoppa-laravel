@@ -37,8 +37,8 @@ class ContactController extends Controller
             "message" => $validated["message"],
         ]);
 
-        // Mail::to(config('mail.admin_email'))
-        //     ->send(new ContactSubmissionMail($contactSubmission));
+        Mail::to(env('MAIL_FROM_ADDRESS'))
+            ->send(new ContactSubmissionMail($contactSubmission));
 
         return response()->json([
             "message" => "Contact message successfully sent!"

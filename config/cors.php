@@ -20,11 +20,11 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'https://tabigoods.ca',
-        'https://www.tabigoods.ca',
-        'https://tabigoods.netlify.app',
-        'http://localhost:3000',  // For local development
-        'http://localhost:5173',  // Vite default
+        'https://otodoke.ca',
+        'https://www.otodoke.ca',
+        'https://otodoke.netlify.app',
+        'http://localhost:5173',  // For local development
+        'http://localhost:5174',  // Vite default
     ],
 
     'allowed_origins_patterns' => [],

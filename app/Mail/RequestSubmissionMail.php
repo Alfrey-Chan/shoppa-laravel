@@ -32,7 +32,6 @@ class RequestSubmissionMail extends Mailable
     {
         return new Envelope(
             subject: 'Order Request Received',
-            replyTo: $this->requestSubmission->email
         );
     }
 

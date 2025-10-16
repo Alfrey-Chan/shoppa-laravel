@@ -30,7 +30,7 @@ class ContactSubmissionMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Shoppa Japan Inquiry',
+            subject: 'Otodoke Japan Inquiry',
         );
     }
 
